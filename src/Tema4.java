@@ -35,21 +35,12 @@ public class Tema4 {
 
         //Bloque Switch-case
         String estacion = cin.nextLine();
-        switch(estacion){
-            case "Primavera":
-                System.out.println("estamos en Pimavera");
-                break;
-            case "Verano":
-                System.out.println("estamos en Verano");
-                break;
-            case "Otoño":
-                System.out.println("estamos en Otoño");
-                break;
-            case "Invierno":
-                System.out.println("estamos en Invierno");
-                break;
-            default:
-                throw new IllegalStateException("Se espera una estación como input: " + estacion);
+        switch (estacion) {
+            case "Primavera" -> System.out.println("estamos en Pimavera");
+            case "Verano" -> System.out.println("estamos en Verano");
+            case "Otoño" -> System.out.println("estamos en Otoño");
+            case "Invierno" -> System.out.println("estamos en Invierno");
+            default -> throw new IllegalStateException("Se espera una estación como input: " + estacion);
         }
 
     }
